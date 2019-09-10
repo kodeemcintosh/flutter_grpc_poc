@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package chat
+
+service Chat {
+  rpc GetMessage (MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {
+  string user_id = 1;
+  string chat_id = 2;
+  string conversation_id = 3;
+  string user_input = 4;
+}
+
+message MessageResponse {
+  string server_response = 1;
+}
