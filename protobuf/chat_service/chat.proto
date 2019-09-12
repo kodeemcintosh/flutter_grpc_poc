@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package chat
+package chat;
 
 service Chat {
   rpc GetMessage (MessageRequest) returns (MessageResponse);
